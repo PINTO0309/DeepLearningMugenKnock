@@ -1,0 +1,8 @@
+numpy
+matplotlib
+opencv-python
+tensorflow
+keras
+torch
+torchvision
+chainer
