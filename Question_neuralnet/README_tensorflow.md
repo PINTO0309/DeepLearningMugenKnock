@@ -167,8 +167,6 @@ def data_load(path):
             elif 'madara' in path:
                 t = np.array((1))
             ts = np.r_[ts, t]
-    
-    xs = xs.transpose(0,3,1,2)
 
     return xs, ts
 

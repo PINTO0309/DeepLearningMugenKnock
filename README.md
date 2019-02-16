@@ -54,7 +54,6 @@ $ pip install -r requirements.txt
 ## 問題
 
 詳細な問題内容は各ディレクトリのREADMEにあります。（ディレクトリで下にスクロールすればあります）
-- 解答は簡易化のため、main()などは使用しません。
 - numpy中心ですが、numpyの基本知識は自分で調べて下さい。
 
 
@@ -80,6 +79,7 @@ $ pip install -r requirements.txt
 | 2 | [PyTorch使ったった](https://github.com/yoyoyo-yo/DeepLearningMugenKnock/blob/master/Question_neuralnet/README_pytorch.md) |
 | 3 | [Tensorflow使ったった](https://github.com/yoyoyo-yo/DeepLearningMugenKnock/blob/master/Question_neuralnet/README_tensorflow.md) |
 | 4 | [Keras使ったった](https://github.com/yoyoyo-yo/DeepLearningMugenKnock/blob/master/Question_neuralnet/README_keras.md) |
+| 5 | [Chainer使ったった](https://github.com/yoyoyo-yo/DeepLearningMugenKnock/blob/master/Question_neuralnet/README_chainer.md) |
 
 ### [画像処理編](https://github.com/yoyoyo-yo/Gasyori100knock/tree/master/Question_31_40)
 

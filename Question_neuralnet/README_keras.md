@@ -133,8 +133,6 @@ def data_load(path):
             elif 'madara' in path:
                 t = np.array((1))
             ts = np.r_[ts, t]
-    
-    xs = xs.transpose(0,3,1,2)
 
     return xs, ts
 
@@ -183,11 +181,10 @@ for i in range(100):
 モデルを学習したらそのパラメータを保存しなきゃいけない。それは*model.save()*を使う。保存名は*model.h5*とする。
 
 ```python
-with tf.Session(config=config) as sess:
-    for i in range(100):
-        # syorayku ...
+for i in range(100):
+    # syorayku ...
         
-    model.save('model.h5')
+model.save('model.h5')
 ```
 
 以上で学習が終了!!
@@ -213,7 +210,7 @@ xs, ts = data_load('../Dataset/test/images/')
 
 ```python
 for x, t in zip(xs, ts):
-x = np.expand_dims(x, axis=0)
+    x = np.expand_dims(x, axis=0)
 
     pred = model.predict_on_batch(x)[0]
     print("in {}, predicted probabilities >> {}".format(path, pred))
