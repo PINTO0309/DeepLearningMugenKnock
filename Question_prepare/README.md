@@ -9,8 +9,9 @@
 ここでいう４次元は[データ数、画像の縦サイズ、画像の横サイズ、チャネル(RGBの3かグレースケールの1)]となる。
 ただしこの順番はフレームワークによって変わる。
 
-| Tensorflow, Keras(Tensorflow)| [データ数、画像の縦サイズ、画像の横サイズ、チャネル] |
+
 |:---:|:---:|
+| Tensorflow, Keras(Tensorflow)| [データ数、画像の縦サイズ、画像の横サイズ、チャネル] |
 | PyTorch, Chainer, Caffe  | [データ数、チャネル、画像の縦サイズ、画像の横サイズ] |
 
 つまり、変数*xs*に学習データセットが代入された場合、xs[0]とすると、1枚めの画像(Height x Width x Channelの画像データ)を取得できるようになる。
@@ -19,8 +20,9 @@
 1次元の場合はクラスのインデックス(例えば３クラス分類にて犬なら0、イモリなら1、ヤモリなら2みたいな)を指定するが、二次元の場合はone-hot表現を用いる(犬なら[1,0,0]、イモリなら[0,1,0]、ヤモリなら[0,0,1]みたいな)。
 これもフレームワークによって変わる。
 
-| PyTorch, Chainer | index [データ数] |
+
 |:---:|:---:|
+| PyTorch, Chainer | index [データ数] |
 | Tensorflow, Keras(Tensorflow), Caffe  | one-hot [データ数、クラス数] |
 
 **このようにフレームワークによって用意するデータの形が変わるので注意**
@@ -57,11 +59,6 @@ def data_laod(path):
     
 xs, ts = data_load('../Dataset/train/images/')
 ```
-
-
-|入力 (imori.jpg)|出力 (answer_load_data.jpg)|
-|:---:|:---:|
-|![](imori.jpg)|![](answer_1.jpg)|
 
 答え >> [answer_data_load.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_1.py)
 

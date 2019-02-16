@@ -5,7 +5,7 @@
 ディープラーニングのフレームワークは今たくさんある。
 よく聞く名前だと、PyTorhc, Chainer, Tensorflow, Keras, Caffeとか、あとはdarknetなんてのもある。
 それぞれの特徴は
-| PyTorch | Face◯ook社が開発してる。最近キテる系 |
+| PyTorch | Face◯ook社が開発してる。最近キテる系 。使いやすい。いろんな手法を実装しているので参考にしやすい |
 |:---:|:---:|
 | Chainer | 日本のPrefer◯ed Networks社が開発してる。日本語の説明が多い。pytorchとかなり似ている |
 | Tensorflow | Goo◯le社が開発している。sessionという独特な使い回しがある。慣れればどうってことない。|
@@ -23,8 +23,8 @@
 
 ただし、それぞれで**独特さ、アイデンティティ**があるので注意。
 
-| PyTorch | torch.tensorという独自の型を使う。モデル定義が少しめんどい |
 |:---:|:---:|
+| PyTorch | torch.tensorという独自の型を使う。モデル定義が少しめんどい |
 | Chainer | chainer.Variable という独自の型を使う。モデル定義が少しめんどい  |
 | Tensorflow | sessionという独特な仕組みを使う。モデルを定義→sessionに入れて計算みたいな流れを取る。 |
 | Keras | 上に比べて結構シンプルに書ける。独特な型とかを意識せずに使える。ただしコアな改造がしにくい。 |
